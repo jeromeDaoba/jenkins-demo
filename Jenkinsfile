@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('') {
       steps {
-        echo 'mvn -version'
+        echo 'mvn clean install -X -Dmaven.test.skip=true'
       }
     }
   }
