@@ -3,8 +3,10 @@ pipeline {
   stages {
     stage('') {
       steps {
-        mvn clean install -X -Dmaven.test.skip=true
+		sh 'mvn clean install -X -Dmaven.test.skip=true'
+        
       }
     }
   }
+  
 }
