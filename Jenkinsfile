@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('') {
       steps {
-		sh 'mvn clean install -X -Dmaven.test.skip=true'
+		bat 'mvn clean install -X -Dmaven.test.skip=true'
         
       }
     }
